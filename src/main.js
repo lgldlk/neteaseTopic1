@@ -1,4 +1,5 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./common/js/rem"; //采用网易适配方式
 
-createApp(App).mount('#app')
+createApp(App).mount("#app");
