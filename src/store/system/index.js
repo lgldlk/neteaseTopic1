@@ -11,8 +11,15 @@ const mutations = {
     },
 };
 
+const getters = {
+    getTheme(state) {
+        return state.theme;
+    },
+};
+
 export default {
     namespaced: true,
     mutations,
     state,
+    getters,
 };

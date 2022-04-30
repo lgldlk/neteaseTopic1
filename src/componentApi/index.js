@@ -1,10 +1,11 @@
-import { useRouter } from "vue-router";
+import { useRouter, useRoute } from "vue-router";
 import { throttle } from "@/util";
 import { ref } from "vue";
+import { useStore } from "vuex";
 // hook常用方法
 export default function() {
-    const router = useRouter();
-
+    const router = useRouter(),
+        route = useRoute();
     /**
      * @description: navTo跳转页面
      * @param {String } name 路由name
@@ -28,7 +29,11 @@ export default function() {
     };
     const isLoading = ref(false), //是否在刷新数据
         loaded = ref(false); //是否加载完毕
+
+    const store = useStore();
     return {
+        store,
+        route,
         routerChange,
         isLoading,
         loaded,

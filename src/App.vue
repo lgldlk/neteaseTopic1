@@ -13,6 +13,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./index.scss";
 #app {
+  background: var(--bg-color);
 }
 </style>

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+
+/* 布局 */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fill {
+    flex: 1;
+}
