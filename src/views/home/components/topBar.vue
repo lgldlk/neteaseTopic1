@@ -60,7 +60,7 @@ export default defineComponent({
   justify-content: space-between;
 
   font-size: 0.32rem;
-  height: $topBarHeight;
+  height: var(--topBarHeight);
   box-sizing: border-box;
   .leftBox {
     .leftItem {
@@ -69,7 +69,7 @@ export default defineComponent({
       color: var(--discover-topBar-noSelect);
 
       height: 100%;
-      line-height: $topBarHeight;
+      line-height: var(--topBarHeight);
       width: 0.9rem;
       text-align: center;
       position: relative;

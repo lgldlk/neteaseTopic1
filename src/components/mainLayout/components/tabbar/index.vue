@@ -110,7 +110,7 @@ export default defineComponent({
   justify-content: space-around;
   padding-bottom: 0.1rem;
   user-select: none;
-  height: $bottomHeight;
+  height: var(--bottomHeight);
   box-sizing: border-box;
   &Item {
     color: var(--tabbar-default);

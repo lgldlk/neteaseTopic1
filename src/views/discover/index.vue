@@ -59,7 +59,7 @@ export default
 
   width: 3.75rem;
   position: absolute;
-  top: $topBarHeight;
+  top: var(--topBarHeight);
   left: 50%;
   transform: translate(-50%, -0.06rem);
 

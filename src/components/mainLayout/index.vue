@@ -36,20 +36,20 @@ export default defineComponent({
   left: 0;
   right: 0;
 
-  height: $topBarHeight;
+  height: var(--topBarHeight);
   box-sizing: border-box;
 }
 .pageCon {
-  height: calc(100vh - $bottomHeight);
+  height: calc(100vh - var(--bottomHeight));
   width: 100vw;
   position: relative;
 }
 .mainCon {
-  top: $topBarHeight;
+  top: var(--topBarHeight);
 }
 .mainCon.swiper {
   .swiper-slide {
-    height: calc(100vh - $bottomHeight - $topBarHeight);
+    height: calc(100vh - var(--bottomHeight) - var(--topBarHeight));
     width: 100vw;
   }
   .swiper-pagination {
