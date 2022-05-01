@@ -153,7 +153,7 @@ export default defineComponent({
         margin-top: -0.145rem;
         z-index: 0;
 
-        background-image: url("~@/assets/discover/advertising.png");
+        background-image: url("/image/advertising.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         animation: advertisingAni 2s alternate infinite;

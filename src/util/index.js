@@ -27,3 +27,24 @@ export const throttle = (fn, delay = 500) => {
         _throttleRunning = false;
     }, delay);
 };
+
+/**
+ * 加载完成
+ * @param timeout {Number} 超时时间 / 单位：秒
+ * @return {Promise<Boolean>} document is loaded? 
+ */
+export function windowLoaded(timeout = 90) {
+    let loaded, loadFail;
+    const status = new Promise((resolve, reject) => {
+        loaded = resolve;
+        loadFail = reject;
+    });
+    if (document.readyState === "complete") {
+        loaded("complete");
+    } else {
+        window.addEventListener("load", () => loaded("load"));
+    }
+    // 超过 timeout 秒后加载失败
+    setTimeout(() => loadFail("timeout"), timeout * 1000);
+    return status;
+}

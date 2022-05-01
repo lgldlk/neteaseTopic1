@@ -11,7 +11,7 @@
     }"
             @swiper="mainConOnSwiper"
             @slideChange="mainConOnSlideChange"
-            :touchRatio="0.7"
+            :touchRatio="1"
             class="mainCon">
       <swiper-slide>推荐页面</swiper-slide>
       <swiper-slide>热门页面</swiper-slide>
