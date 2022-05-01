@@ -16,7 +16,7 @@
            v-if="item.tipNum">{{item.tipNum}}</div>
     </div>
     <div class="centerIcon center">
-      <img :src="require('@/assets/tabbar/centerIcon.png')" />
+      <img :src="'./image/tabbar/centerIcon.png'" />
     </div>
 
   </div>
@@ -34,28 +34,28 @@ export default defineComponent({
      */
     const tabbarIcon = [
       {
-        icon: require('@/assets/tabbar/home.png'),
-        activeIcon: require("@/assets/tabbar/home-active.png"),
+        icon: './image/tabbar/home.png',
+        activeIcon: "./image/tabbar/home-active.png",
         // darkIcon:
         txt: "首页",
         name: "home"
       }, {
-        icon: require('@/assets/tabbar/discover.png'),
-        activeIcon: require("@/assets/tabbar/discover-active.png"),
+        icon: './image/tabbar/discover.png',
+        activeIcon: "./image/tabbar/discover-active.png",
         // darkIcon:
         txt: "发现",
         name: "discover"
       },
       {
-        icon: require('@/assets/tabbar/fair.png'),
-        activeIcon: require("@/assets/tabbar/fair-active.png"),
+        icon: './image/tabbar/fair.png',
+        activeIcon: "./image/tabbar/fair-active.png",
         // darkIcon:
         txt: "市集",
         name: "fair"
       },
       {
-        icon: require('@/assets/tabbar/my.png'),
-        activeIcon: require("@/assets/tabbar/my-active.png"),
+        icon: './image/tabbar/my.png',
+        activeIcon: "./image/tabbar/my-active.png",
         // darkIcon:
         txt: "我的",
         name: "my"

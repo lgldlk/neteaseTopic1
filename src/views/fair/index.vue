@@ -1,7 +1,7 @@
 <template>
   <div class="pageCon">
     <div class="topBar center">
-      <img :src="require('@/assets/fair/topTitle.png')" />
+      <img :src="'./image/fair/topTitle.png'" />
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="topBar row">
     <div class="leftBox">
-      <img :src="require('@/assets/discover/live.png')" />
+      <img :src="'./image/discover/live.png'" />
       <div class="liveTip"
            v-if="showLiveTip"></div>
     </div>
@@ -19,7 +19,7 @@
       </div> -->
     </div>
     <div class="rightBox">
-      <img :src="require('@/assets/discover/search.png')" />
+      <img :src="'./image/discover/search.png'" />
     </div>
   </div>
 </template>
@@ -153,7 +153,7 @@ export default defineComponent({
         margin-top: -0.145rem;
         z-index: 0;
 
-        background-image: url("/image/advertising.png");
+        background-image: url("/image/discover/advertising.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         animation: advertisingAni 2s alternate infinite;

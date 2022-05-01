@@ -12,7 +12,7 @@
     </div>
 
     <div class="rightBox">
-      <img :src="require('@/assets/home/personAdd.png')" />
+      <img :src="'./image/home/personAdd.png'" />
     </div>
   </div>
 </template>
