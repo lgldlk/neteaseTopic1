@@ -110,6 +110,8 @@ export default defineComponent({
   justify-content: space-around;
   padding-bottom: 0.1rem;
   user-select: none;
+  height: $bottomHeight;
+  box-sizing: border-box;
   &Item {
     color: var(--tabbar-default);
     font-size: 0.18rem;
@@ -127,7 +129,7 @@ export default defineComponent({
       width: 0.68rem;
       text-align: center;
       font-weight: bold;
-      margin-top: -0.12rem;
+      margin-top: -0.1rem;
       letter-spacing: 0.2em;
       text-indent: 0.2em;
       white-space: nowrap;

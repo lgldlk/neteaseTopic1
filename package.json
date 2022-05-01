@@ -14,7 +14,8 @@
     "sass-resources-loader": "2.2.5",
     "vue": "^3.2.33",
     "vue-router": "4.0.14",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "swiper": "^7.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

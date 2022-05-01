@@ -1,3 +1,5 @@
+$bottomHeight:1rem;
+$topBarHeight:0.8rem;
 //默认浅色主题
 :root {
     --bg-color: #fff;
@@ -5,6 +7,8 @@
     --tabbar-default: #b3b3b3;
     --tabbar-activate: #4d4d4d;
     --cut-off-rule: #f2f2f2;
+    --discover-topBar-noSelect: #B3B3B3;
+    --discover-topBar-selected: #2E2E2E;
 }
 
 //深色主题
