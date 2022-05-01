@@ -20,12 +20,45 @@ export default defineComponent({
 <style scoped lang='scss'>
 .mainPage {
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   .tabbar {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+  }
+}
+</style>
+<style  lang='scss'>
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: $topBarHeight;
+  box-sizing: border-box;
+}
+.pageCon {
+  height: calc(100vh - $bottomHeight);
+  width: 100vw;
+  position: relative;
+}
+.mainCon {
+  top: $topBarHeight;
+}
+.mainCon.swiper {
+  .swiper-slide {
+    height: calc(100vh - $bottomHeight - $topBarHeight);
+    width: 100vw;
+  }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background: rgb(255, 255, 255);
+    }
+    .swiper-pagination-bullet-active {
+      background: rgb(255, 255, 255);
+    }
   }
 }
 </style>

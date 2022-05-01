@@ -25,11 +25,12 @@
 </template>
 <script >
 import {
-  defineComponent, ref, onMounted, toRefs,
+  defineComponent, ref, onMounted,
   // computed,
 
 } from 'vue'
-import baseApi from '@/componentApi'
+import { topBarSwiper } from '@/hook/pageTopBar'
+import baseApi from '@/hook'
 export default defineComponent({
   name: 'topBar',
   props: {
@@ -47,11 +48,11 @@ export default defineComponent({
     })
 
 
-    const centerList = ['推荐', "热门", '视频']
-      , { selectIndex: nowSelectIndex } = toRefs(props)
-    const changeSwiperIndex = (index) => {
-      con.emit("update:selectIndex", index)
-    }
+    const centerList = ['推荐', "热门", '视频'];
+
+
+    const { nowSelectIndex,
+      changeSwiperIndex } = topBarSwiper(props, con)
     //本来想使用 dom节点和touch事件获得距离来操作dom节点达到底部指示条切换的操作，后面发现自定义scrollbar更方便
     // let centerBoxLeft = 0;
     // const
@@ -105,7 +106,7 @@ export default defineComponent({
   right: 0;
   justify-content: space-between;
 
-  font-size: 32px;
+  font-size: 0.32rem;
   height: $topBarHeight;
   box-sizing: border-box;
   .leftBox {

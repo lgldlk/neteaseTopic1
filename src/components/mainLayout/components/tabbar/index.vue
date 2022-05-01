@@ -23,7 +23,7 @@
 </template>
 <script >
 import { defineComponent, computed } from 'vue'
-import baseApi from '@/componentApi'
+import baseApi from '@/hook'
 
 export default defineComponent({
   name: 'tabbar',
